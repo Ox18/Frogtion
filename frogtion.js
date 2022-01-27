@@ -5,7 +5,8 @@
                 NORMAL: "NORMAL",
                 HOVER: "HOVER",
                 CLICKED: "CLICKED",
-                DISABLED: "DISABLED"
+                DISABLED: "DISABLED",
+                FEATURE: "FEATURE"
             },
             ANIMATION: {
                 SPEED_NORMAL: 20,
@@ -14,7 +15,7 @@
 
         class Frogtity{
             constructor(){
-                this.frames = {};
+                this.frames = {}; 
                 this.rows = 0;
                 this.columns = 0;
                 this.totalCount = 0;
