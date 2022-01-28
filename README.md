@@ -16,7 +16,7 @@ Frogtion is a library for creating animations based on web cursor event handling
 
 ### Basic
 
-Add styles in `<head>`:
+Add script in `<head>`:
 
 ```html
   <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.js"></script>
@@ -27,3 +27,7 @@ or
 ```html
   <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.min.js"></script>
 ```
+
+---
+
+## 🤔 How to use it?
