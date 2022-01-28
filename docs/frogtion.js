@@ -69,6 +69,20 @@
                 return this;
             }
         
+            setTitle(
+                title
+            ){
+                this.title = title;
+                return this;
+            }
+
+            setTooltip(
+                tooltip
+            ){
+                this.tooltip = tooltip;
+                return this;
+            }
+
             addElement(
                 tag
             ){
