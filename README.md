@@ -17,11 +17,11 @@ Frogtion is a library for creating animations based on web cursor event handling
 Add styles in `<head>`:
 
 ```html
-  <link rel="stylesheet" href="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.js" />
+  <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.js"></script>
 ```
 
 or
 
 ```html
-  <link rel="stylesheet" href="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.min.js" />
+  <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.min.js"></script>
 ```
