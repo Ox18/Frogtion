@@ -102,3 +102,8 @@ const frogtion = Frogtion
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_2.gif)
 <br>
 [View demo](https://codesandbox.io/s/aged-surf-lg3df?file=/index.html)
+
+### 3. Title and Tooltip example
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_3.gif)
+<br>
+[View demo](https://codesandbox.io/s/example-03-zk2o0?file=/index.html)
