@@ -275,6 +275,7 @@
                 padding: 5px;
                 border: 1px solid #7a785f;
                 text-align: center;
+                transition: all 0.3s ease-in-out;
                 display: none;`;
             }
         
