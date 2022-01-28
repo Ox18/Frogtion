@@ -24,4 +24,5 @@ body{
     height: 183px;
     transform: scale(1.4);
     background-position: -0px -0px;
+    display: none;
 }
