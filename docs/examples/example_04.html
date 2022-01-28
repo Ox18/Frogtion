@@ -24,9 +24,9 @@ body{
 }
 
 #button-change-mobile{
-    background-image: url(https://raw.githubusercontent.com/hakanaku2009/Openbound/dev/OpenBound/Content/Interface/InGame/Scene/ServerList/ServerStatusAnimatedIcon.png);
-    width: 62px;
-    height: 58px;
+    background-image: url(https://raw.githubusercontent.com/hakanaku2009/Openbound/dev/OpenBound/Content/Interface/AnimatedButtons/GameRoom/Ready.png);
+    width: 66px;
+    height: 66px;
     transform: scale(1.4);
     background-position: -0px -0px;
 }
@@ -39,20 +39,22 @@ body{
     <script>
         const buttonChangeMobile = Frogtity
                             .init()
-                            .setRows(14)
+                            .setRows(3)
                             .setColumns(20)
-                            .setTotalCount(54)
+                            .setTotalCount(44)
                             .addElement('#button-change-mobile')
-                            .setWidthPerFrame(1240 / 20)
-                            .setHeightPerFrame(812 / 14);
+                            .setWidthPerFrame(66)
+                            .setHeightPerFrame(66)
+                            .setTitle("ready")
+                            .setTooltip("Ready to play");
 
         const animate = Frogtion
                             .init()
                             .setFrogtity(buttonChangeMobile)
-                            .addFrameNormal({ startFrame: 127, endFrame: 127 })
-                            .addFrameHover({ startFrame: 127, endFrame: 167 })
-                            .addFrameClicked({ startFrame: 20, endFrame: 52, loop: false, endLoopChangeTo: CONSTS.STATUS_FRAME.HOVER })
-                            .addFrameDisabled({ startFrame: 53, endFrame: 53 })
+                            .addFrameNormal({ startFrame: 0, endFrame: 0 })
+                            .addFrameHover({ startFrame: 0, endFrame: 19 })
+                            .addFrameClicked({ startFrame: 20, endFrame: 42, loop: false, endLoopChangeTo: CONSTS.STATUS_FRAME.HOVER })
+                            .addFrameDisabled({ startFrame: 43, endFrame: 43 })
                             .run();
         
         

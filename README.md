@@ -112,3 +112,5 @@ const frogtion = Frogtion
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_1.gif)
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_2.gif)
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_3.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_4.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_5.gif)
