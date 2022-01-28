@@ -1,4 +1,4 @@
-# 🐸🖱 Frogtion
+# Frogtion
 
 
 Frogtion is a library for creating animations based on web cursor event handling. It is built with VanillaJS. It can be used in the browser.
@@ -7,7 +7,7 @@ Frogtion is a library for creating animations based on web cursor event handling
 
 [https://ox18.github.io/Frogtion/](https://ox18.github.io/Frogtion/)
 
-## Preview
+## 🔥 Preview
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/handler_preview.gif)
 
 ---
