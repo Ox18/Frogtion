@@ -127,6 +127,14 @@
             getHeightPerFrame(){
                 return this.heightPerFrame;
             }
+
+            getTitle(){
+                return this.title;
+            }
+
+            getTooltip(){
+                return this.tooltip;
+            }
         };
         
         class Frogtion{
@@ -141,6 +149,8 @@
                 };
                 this.frameName = CONSTS.STATUS_FRAME.NORMAL;
                 this.SPEED_DEFAULT = CONSTS.ANIMATION.SPEED_NORMAL;
+                this.tooltip = null;
+                this.title = null;
             }
         
             static init(){
@@ -208,6 +218,33 @@
 
             onRun(){
                 this.changeAnimateTo(CONSTS.STATUS_FRAME.NORMAL);
+                this.addContainer();
+                this.addTooltip();
+                this.addTitle();
+            }
+
+            addContainer(){
+                const element = document.createElement("div");
+                element.classList.add("frogtity-container");
+                this.frogtity.getElement().appendChild(element);
+            }
+
+            addTitle(){
+                if(!this.frogtity.getTitle()) return;
+                const element = document.createElement("div");
+                element.innerHTML = this.frogtity.getTitle();
+                element.classList.add("frogtity-title");
+                this.frogtity.getElement().children[0].appendChild(element);
+                this.title = element;
+            }
+
+            addTooltip(){
+                if(!this.frogtity.getTooltip()) return;
+                const element = document.createElement("div");
+                element.innerHTML = this.frogtity.getTooltip();
+                element.classList.add("frogtity-tooltip");
+                this.frogtity.getElement().children[0].appendChild(element);
+                this.tooltip = element;
             }
         
             getSecondsToChange(){
@@ -297,6 +334,14 @@
             ){
                 if(name !== CONSTS.STATUS_FRAME.DISABLED && this.disabled) return;
                 if(this.frogtity.getFrames()[name] && this.frameName !== name) this.changeAnimateTo(name);
+
+                if(this.tooltip){
+                    if(name === CONSTS.STATUS_FRAME.HOVER){
+                        this.tooltip.style.display = "block";
+                    }else{
+                        this.tooltip.style.display = "none";
+                    }
+                }
             }
 
             changeAnimateTo(
@@ -305,6 +350,7 @@
                 this.framesSelected = this.frogtity.getFrames()[name];
                 this.frameName = name;
                 this.resetPointer();
+                
             }
         
             resetPointer(){
