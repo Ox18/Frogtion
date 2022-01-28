@@ -7,17 +7,21 @@ body{
 }
 
 #root{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 #button-change-mobile{
     background-image: url(https://raw.githubusercontent.com/GunDevs/Animation-Engine-JS/main/docs/public/assets/ChangeMobile.png);
     width: 46px;
     height: 42px;
+    transform: scale(1.4);
+    background-position: -0px -0px;
+}
+
+#person-megaman{
+    background-image: url(https://www.kindpng.com/picc/m/12-129142_exemplo-de-spritesheet-sprite-sheet-megaman-png-transparent.png);
+    width: 172px;
+    height: 183px;
     transform: scale(1.4);
     background-position: -0px -0px;
 }

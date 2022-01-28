@@ -11,6 +11,7 @@
 <body>
     <div id="root">
         <div id="button-change-mobile" class="pointer"></div>
+        <div id="person-megaman"></div>
     </div>
     <script>
         const buttonChangeMobile = Frogtity
@@ -30,6 +31,9 @@
                             .addFrameClicked({ startFrame: 20, endFrame: 52, loop: false, endLoopChangeTo: CONSTS.STATUS_FRAME.HOVER })
                             .addFrameDisabled({ startFrame: 53, endFrame: 53 })
                             .run();
+
+        const megaman = Frogtity.init().setRows(2).setColumns(5).setTotalCount(10).addElement('#person-megaman').setWidthPerFrame(172).setHeightPerFrame(183);
+        const animateMegaman = Frogtion.init().setFrogtity(megaman).addFrameNormal({ startFrame: 0, endFrame: 10 }).run();
     </script>
 </body>
 </html>
