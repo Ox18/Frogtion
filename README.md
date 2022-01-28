@@ -94,5 +94,5 @@ const frogtion = Frogtion
 ## 🥳 Some examples
 
 ### 1. Basic example
-[View demo](https://codesandbox.io/s/example-01-ip8p9?file=/index.html)
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/handler_preview.gif)
+[View demo](https://codesandbox.io/s/example-01-ip8p9?file=/index.html)
