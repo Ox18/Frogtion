@@ -86,3 +86,12 @@ const frogtion = Frogtion
 ```html
 <div id="button-change-mobile"></div>
 ```
+
+
+
+---
+
+## 🥳 Some examples
+
+### 1. Basic example
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/handler_preview.gif)
