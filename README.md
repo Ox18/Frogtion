@@ -107,3 +107,8 @@ const frogtion = Frogtion
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_3.gif)
 <br>
 [View demo](https://codesandbox.io/s/example-03-zk2o0?file=/index.html)
+
+### 4. Other examples with different images
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_1.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_2.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_3.gif)

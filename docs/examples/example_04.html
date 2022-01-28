@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogtion - Example Disabled 02</title>
+    <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/1.0.3/raw/frogtion.min.js"></script>
+    <style>
+body{
+    background-color: #f2f2f2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#button-change-mobile{
+    background-image: url(https://raw.githubusercontent.com/hakanaku2009/Openbound/dev/OpenBound/Content/Interface/InGame/Scene/ServerList/ServerStatusAnimatedIcon.png);
+    width: 62px;
+    height: 58px;
+    transform: scale(1.4);
+    background-position: -0px -0px;
+}
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="button-change-mobile" class="pointer"></div>
+    </div>
+    <script>
+        const buttonChangeMobile = Frogtity
+                            .init()
+                            .setRows(14)
+                            .setColumns(20)
+                            .setTotalCount(54)
+                            .addElement('#button-change-mobile')
+                            .setWidthPerFrame(1240 / 20)
+                            .setHeightPerFrame(812 / 14);
+
+        const animate = Frogtion
+                            .init()
+                            .setFrogtity(buttonChangeMobile)
+                            .addFrameNormal({ startFrame: 127, endFrame: 127 })
+                            .addFrameHover({ startFrame: 127, endFrame: 167 })
+                            .addFrameClicked({ startFrame: 20, endFrame: 52, loop: false, endLoopChangeTo: CONSTS.STATUS_FRAME.HOVER })
+                            .addFrameDisabled({ startFrame: 53, endFrame: 53 })
+                            .run();
+        
+        
+    </script>
+</body>
+</html>
