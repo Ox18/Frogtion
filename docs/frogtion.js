@@ -227,6 +227,15 @@
                 const element = document.createElement("div");
                 element.classList.add("frogtity-container");
                 this.frogtity.getElement().appendChild(element);
+                element.style.cssText = `
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-end;
+                align-items: center;
+                `;
             }
 
             addTitle(){
@@ -236,6 +245,16 @@
                 element.classList.add("frogtity-title");
                 this.frogtity.getElement().children[0].appendChild(element);
                 this.title = element;
+                this.title.style.cssText = `
+                text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
+                color: white;
+                font: inherit;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                height: 100%;
+                user-select: none;
+                padding-top: 60%;`
             }
 
             addTooltip(){
@@ -245,6 +264,18 @@
                 element.classList.add("frogtity-tooltip");
                 this.frogtity.getElement().children[0].appendChild(element);
                 this.tooltip = element;
+                this.tooltip.style.cssText = `
+                background-color: #f0efcf;
+                font: inherit;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 10px;
+                max-width: 100px;
+                min-width: 100px;
+                color: #7a785f;
+                padding: 5px;
+                border: 1px solid #7a785f;
+                text-align: center;
+                display: none;`;
             }
         
             getSecondsToChange(){
