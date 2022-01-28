@@ -10,7 +10,7 @@ Frogtion is a library for creating animations based on web cursor event handling
 [https://ox18.github.io/Frogtion/](https://ox18.github.io/Frogtion/)
 
 ## 🔥 Preview
-![Preview](https://github.com/Ox18/Frogtion/blob/master/images/handler_preview.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_1.gif)
 
 ## ⚙ Installation
 
@@ -94,5 +94,11 @@ const frogtion = Frogtion
 ## 🥳 Some examples
 
 ### 1. Basic example
-![Preview](https://github.com/Ox18/Frogtion/blob/master/images/handler_preview.gif)
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_1.gif)
+<br>
 [View demo](https://codesandbox.io/s/example-01-ip8p9?file=/index.html)
+
+### 2. Disabled example
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_2.gif)
+<br>
+[View demo](https://codesandbox.io/s/aged-surf-lg3df?file=/index.html)
