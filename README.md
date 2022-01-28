@@ -87,7 +87,10 @@ const frogtion = Frogtion
 <div id="button-change-mobile"></div>
 ```
 
-
+### 5. Plus
+The image I used for the example, is this one
+All frames have the same sizes
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/ChangeMobile.png)
 
 ---
 
