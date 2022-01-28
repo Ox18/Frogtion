@@ -31,3 +31,16 @@ or
 ---
 
 ## 🤔 How to use it?
+
+### 1. Initialize Frogtity
+
+```js
+    const buttonFrogtity = Frogtity
+                            .init()                              // Set
+                            .setRows(3)                          // Set
+                            .setColumns(20)                      // Set
+                            .setTotalCount(54)                   // Set
+                            .addElement('#button-change-mobile') // Select the element in HTML
+                            .setWidthPerFrame(920 / 20)          // Set
+                            .setHeightPerFrame(126 / 3);         // Set
+```
