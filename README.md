@@ -148,3 +148,7 @@ You must edit the css class `.frogtity-title` <br>
 <br>
 
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/how_to_change_css_2.png)
+
+## 🚘 Frogtity
+
+## 🐸 Frogtion
