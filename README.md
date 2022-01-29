@@ -123,8 +123,8 @@ All frames have the same sizes
 ### 1. Change the tooltip
 <br>
 
-You must edit the css class `.frogtity-tooltip`
-It is important that you add in the value of your properties, at the end, the `!import` tag
+You must edit the css class `.frogtity-tooltip` <br>
+🚨 It is important that you add in the value of your properties, at the end, the `!import` tag
 <br>
 
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/how_to_change_css.png)
@@ -135,8 +135,8 @@ It is important that you add in the value of your properties, at the end, the `!
 ### 2. Change the title
 <br>
 
-You must edit the css class `.frogtity-title`
-It is important that you add in the value of your properties, at the end, the `!import` tag
+You must edit the css class `.frogtity-title` <br>
+🚨 It is important that you add in the value of your properties, at the end, the `!import` tag
 <br>
 
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/how_to_change_css_2.png)
