@@ -122,7 +122,9 @@ All frames have the same sizes
 
 ### 1. Change the tooltip
 <br>
+
 You must edit the css class `.frogtity-tooltip`
 It is important that you add in the value of your properties, at the end, the `!import` tag
 <br>
+
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/how_to_change_css.png)
