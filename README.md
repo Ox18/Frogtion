@@ -20,8 +20,8 @@ N   | Section Page |
 2   | 🤔 [How to use it?](https://github.com/Ox18/Frogtion#-installation) |
 3   | 🥳 [Some examples](https://github.com/Ox18/Frogtion#-installation) |
 4   | 🖌 [How to customize styles?](https://github.com/Ox18/Frogtion#-installation) |
-5   | 🚘 [Frogtity](https://ox18.github.io/Frogtion/) |
-6   | 🐸 [Frogtion](https://ox18.github.io/Frogtion/) |
+5   | 🚘 [Frogtity](https://github.com/Ox18/Frogtion#-frogtity) |
+6   | 🐸 [Frogtion](https://github.com/Ox18/Frogtion#-frogtion) |
 
 ## ⚙ Installation
 
