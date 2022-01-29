@@ -30,6 +30,15 @@ or
 
 ## 📖 Index
 
+N   | Section Page |
+--- | --- | 
+1   | 🤔 How to use it? |
+2   | 🥳 Some examples |
+3   | 🖌 How to customize styles? |
+4   | 🤔 How to use it? |
+5   | 🚘 Frogtity |
+5   | 🐸 Frogtion |
+
 ## 🤔 How to use it?
 
 ### 1. Initialize Frogtity
