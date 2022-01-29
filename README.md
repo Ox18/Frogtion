@@ -16,12 +16,12 @@ Frogtion is a library for creating animations based on web cursor event handling
 
 N   | Section Page |
 --- | --- | 
-1   | ⚙ Installation |
-2   | 🤔 How to use it? |
-3   | 🥳 Some examples |
-4   | 🖌 How to customize styles? |
-5   | 🚘 Frogtity |
-6   | 🐸 Frogtion |
+1   | ⚙ [Installation](https://github.com/Ox18/Frogtion#-installation)  |
+2   | 🤔 [How to use it?](https://github.com/Ox18/Frogtion#-installation) |
+3   | 🥳 [Some examples](https://github.com/Ox18/Frogtion#-installation) |
+4   | 🖌 [How to customize styles?](https://github.com/Ox18/Frogtion#-installation) |
+5   | 🚘 [Frogtity](https://ox18.github.io/Frogtion/) |
+6   | 🐸 [Frogtion](https://ox18.github.io/Frogtion/) |
 
 ## ⚙ Installation
 
