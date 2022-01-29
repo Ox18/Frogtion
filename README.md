@@ -117,3 +117,8 @@ All frames have the same sizes
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_3.gif)
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_4.gif)
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_other_server_status_5.gif)
+
+## 🖌 How to customize styles?
+
+### 1. Change the tooltip
+![Preview](https://github.com/Ox18/Frogtion/blob/master/images/how_to_change_css.png)
