@@ -28,7 +28,7 @@ or
   <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/1.0.3/raw/frogtion.min.js"></script>
 ```
 
----
+## 📖 Index
 
 ## 🤔 How to use it?
 
@@ -92,7 +92,6 @@ The image I used for the example, is this one
 All frames have the same sizes
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/ChangeMobile.png)
 
----
 
 ## 🥳 Some examples
 
