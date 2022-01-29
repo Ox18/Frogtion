@@ -12,6 +12,17 @@ Frogtion is a library for creating animations based on web cursor event handling
 ## 🔥 Preview
 ![Preview](https://github.com/Ox18/Frogtion/blob/master/images/example_1.gif)
 
+## 📖 Index
+
+N   | Section Page |
+--- | --- | 
+1   | ⚙ Installation |
+2   | 🤔 How to use it? |
+3   | 🥳 Some examples |
+4   | 🖌 How to customize styles? |
+5   | 🚘 Frogtity |
+6   | 🐸 Frogtion |
+
 ## ⚙ Installation
 
 ### Basic
@@ -27,16 +38,6 @@ or
 ```html
   <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/1.0.3/raw/frogtion.min.js"></script>
 ```
-
-## 📖 Index
-
-N   | Section Page |
---- | --- | 
-1   | 🤔 How to use it? |
-2   | 🥳 Some examples |
-3   | 🖌 How to customize styles? |
-4   | 🚘 Frogtity |
-5   | 🐸 Frogtion |
 
 ## 🤔 How to use it?
 
