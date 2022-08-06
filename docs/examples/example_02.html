@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frogtion</title>
-    <link rel="stylesheet" href="./main.css">
-    <script type="text/javascript" src="frogtion.js"></script>
+    <title>Frogtion - Example Disabled 02</title>
+    <link rel="stylesheet" href="../main.css">
+    <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/beta/raw/frogtion.min.js"></script>
+    <style>
+        #root{
+            display: inline-flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+    </style>
 </head>
 <body>
     <div id="root">
+        <div>
+            <button id="enable">
+                Enable
+            </button>
+            <button id="disable">
+                Disable
+            </button>
+        </div>
         <div id="button-change-mobile" class="pointer"></div>
-        <div id="person-megaman"></div>
     </div>
     <script>
         const buttonChangeMobile = Frogtity
@@ -21,9 +35,7 @@
                             .setTotalCount(54)
                             .addElement('#button-change-mobile')
                             .setWidthPerFrame(920 / 20)
-                            .setHeightPerFrame(126 / 3)
-                            .setTitle("Móvil")
-                            .setTooltip("Muestre la siguiente lista de items");
+                            .setHeightPerFrame(126 / 3);
 
         const animate = Frogtion
                             .init()
@@ -34,8 +46,17 @@
                             .addFrameDisabled({ startFrame: 53, endFrame: 53 })
                             .run();
 
-        const megaman = Frogtity.init().setRows(2).setColumns(5).setTotalCount(10).addElement('#person-megaman').setWidthPerFrame(172).setHeightPerFrame(183);
-        const animateMegaman = Frogtion.init().setFrogtity(megaman).addFrameNormal({ startFrame: 0, endFrame: 10 }).run();
+        // other script
+        const enable = document.getElementById('enable');
+        const disable = document.getElementById('disable');
+        
+        enable.addEventListener("click", ()=>{
+            animate.onEnable();
+        });
+
+        disable.addEventListener("click", ()=>{
+            animate.onDisable();
+        });
     </script>
 </body>
 </html>

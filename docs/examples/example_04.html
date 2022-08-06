@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogtion - Example Disabled 02</title>
+    <script type="text/javascript" src="https://cdn.deno.land/frogtion/versions/1.0.3/raw/frogtion.min.js"></script>
+    <style>
+body{
+    background-color: #f2f2f2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#button-change-mobile{
+    background-image: url(https://raw.githubusercontent.com/hakanaku2009/Openbound/dev/OpenBound/Content/Interface/AnimatedButtons/GameRoom/Ready.png);
+    width: 66px;
+    height: 66px;
+    transform: scale(1.4);
+    background-position: -0px -0px;
+}
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="button-change-mobile" class="pointer"></div>
+    </div>
+    <script>
+        const buttonChangeMobile = Frogtity
+                            .init()
+                            .setRows(3)
+                            .setColumns(20)
+                            .setTotalCount(44)
+                            .addElement('#button-change-mobile')
+                            .setWidthPerFrame(66)
+                            .setHeightPerFrame(66)
+                            .setTitle("ready")
+                            .setTooltip("Ready to play");
+
+        const animate = Frogtion
+                            .init()
+                            .setFrogtity(buttonChangeMobile)
+                            .addFrameNormal({ startFrame: 0, endFrame: 0 })
+                            .addFrameHover({ startFrame: 0, endFrame: 19 })
+                            .addFrameClicked({ startFrame: 20, endFrame: 42, loop: false, endLoopChangeTo: CONSTS.STATUS_FRAME.HOVER })
+                            .addFrameDisabled({ startFrame: 43, endFrame: 43 })
+                            .run();
+        
+        
+    </script>
+</body>
+</html>
