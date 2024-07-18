@@ -69,6 +69,20 @@
                 return this;
             }
         
+            setTitle(
+                title
+            ){
+                this.title = title;
+                return this;
+            }
+
+            setTooltip(
+                tooltip
+            ){
+                this.tooltip = tooltip;
+                return this;
+            }
+
             addElement(
                 tag
             ){
@@ -113,6 +127,14 @@
             getHeightPerFrame(){
                 return this.heightPerFrame;
             }
+
+            getTitle(){
+                return this.title;
+            }
+
+            getTooltip(){
+                return this.tooltip;
+            }
         };
         
         class Frogtion{
@@ -127,6 +149,8 @@
                 };
                 this.frameName = CONSTS.STATUS_FRAME.NORMAL;
                 this.SPEED_DEFAULT = CONSTS.ANIMATION.SPEED_NORMAL;
+                this.tooltip = null;
+                this.title = null;
             }
         
             static init(){
@@ -194,6 +218,65 @@
 
             onRun(){
                 this.changeAnimateTo(CONSTS.STATUS_FRAME.NORMAL);
+                this.addContainer();
+                this.addTooltip();
+                this.addTitle();
+            }
+
+            addContainer(){
+                const element = document.createElement("div");
+                element.classList.add("frogtity-container");
+                this.frogtity.getElement().appendChild(element);
+                element.style.cssText = `
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-end;
+                align-items: center;
+                `;
+            }
+
+            addTitle(){
+                if(!this.frogtity.getTitle()) return;
+                const element = document.createElement("div");
+                element.innerHTML = this.frogtity.getTitle();
+                element.classList.add("frogtity-title");
+                this.frogtity.getElement().children[0].appendChild(element);
+                this.title = element;
+                this.title.style.cssText = `
+                text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
+                color: white;
+                font: inherit;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                height: 100%;
+                user-select: none;
+                padding-top: 60%;`
+            }
+
+            addTooltip(){
+                if(!this.frogtity.getTooltip()) return;
+                const element = document.createElement("div");
+                element.innerHTML = this.frogtity.getTooltip();
+                element.classList.add("frogtity-tooltip");
+                this.frogtity.getElement().children[0].appendChild(element);
+                this.tooltip = element;
+                this.tooltip.style.cssText = `
+                background-color: #f0efcf;
+                font: inherit;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 10px;
+                max-width: 100px;
+                min-width: 100px;
+                color: #7a785f;
+                padding: 5px;
+                border: 1px solid #7a785f;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                display: none;`;
             }
         
             getSecondsToChange(){
@@ -283,6 +366,14 @@
             ){
                 if(name !== CONSTS.STATUS_FRAME.DISABLED && this.disabled) return;
                 if(this.frogtity.getFrames()[name] && this.frameName !== name) this.changeAnimateTo(name);
+
+                if(this.tooltip){
+                    if(name === CONSTS.STATUS_FRAME.HOVER){
+                        this.tooltip.style.display = "block";
+                    }else{
+                        this.tooltip.style.display = "none";
+                    }
+                }
             }
 
             changeAnimateTo(
@@ -291,6 +382,7 @@
                 this.framesSelected = this.frogtity.getFrames()[name];
                 this.frameName = name;
                 this.resetPointer();
+                
             }
         
             resetPointer(){
